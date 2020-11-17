@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <p v-for="u in users" :key="u.id">{{ msg }} {{ u }}</p>
   </div>
 </template>
 
@@ -9,6 +9,7 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String,
+    users: Array,
   },
 };
 </script>

@@ -12,15 +12,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
-          </li>
         </ul>
       </div>
     </div>
@@ -34,7 +25,7 @@
       </div>
     </div>
 
-    <HelloWorld msg="Javascript" />
+    <HelloWorld v-bind:users="user" msg="Javascript" />
     <Menu v-on:termChange="onTermChange"></Menu>
   </div>
 </template>
